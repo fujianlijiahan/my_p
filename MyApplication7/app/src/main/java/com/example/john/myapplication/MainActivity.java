@@ -13,7 +13,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.button);
         btnOne = (Button) findViewById(R.id.btnOne);
+
         btnTwo = (Button) findViewById(R.id.btnTwo);
+        Log.v("btnOne", btnOne.getText().toString());
+        Log.v("btnTwo", btnTwo.getText().toString());
         btnTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
